@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+body {
+    background: #d1e8e2;
+}
+
+nav {
+    height: 80px;
+    background: #d1e8e2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+.nav-items a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0 1.5rem;
+}
+
+.nav-items a:hover{ 
+    color: #313030;
+}
+
+.hero {
+    background: #d1e8e2;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000;
+    padding: 0rem 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background: black;
+    color: #d1e8e2;
+    cursor: pointer;
+    border-radius: 50px;
+    
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+button {
+    transition: background-color .1s ease-in-out;
+}
+
+button:hover {
+    background-color: #313030;
+    
+}
+
+.hero-img {
+    width: 40rem;
+    height: 40rem;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.hero-container-2 {
+    display: grid;
+    
+    height: 95vh;
+}
+
+.table input {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+.table h1 {
+    margin: 1rem;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    border: none;
+}
